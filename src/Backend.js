@@ -6,10 +6,10 @@ class Backend {
   // initialize Firebase Backend
   constructor() {
     firebase.initializeApp({
-      apiKey: 'AIzaSyAiuvZgc9iLMezprc5zYLBw9PsrgRkXjrE',
-      authDomain: 'meetupchat-dbce1.firebaseapp.com',
-      databaseURL: 'https://meetupchat-dbce1.firebaseio.com',
-      storageBucket: 'meetupchat-dbce1.appspot.com',
+        apiKey: 'AIzaSyAiuvZgc9iLMezprc5zYLBw9PsrgRkXjrE',
+        authDomain: 'meetupchat-dbce1.firebaseapp.com',
+        databaseURL: 'https://meetupchat-dbce1.firebaseio.com',
+        storageBucket: 'meetupchat-dbce1.appspot.com',
     });
     firebase.auth().onAuthStateChanged((user) => {
       if (user) {
