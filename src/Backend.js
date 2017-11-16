@@ -57,7 +57,7 @@ class Backend {
       });
     }
   }
-  // close the connection to the Backend
+  // close the connection to the Backend.
   closeChat() {
     if (this.messagesRef) {
       this.messagesRef.off();
