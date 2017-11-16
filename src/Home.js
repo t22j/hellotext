@@ -18,7 +18,7 @@ export default class Home extends React.Component {
     return (
       <View style={styles.container}>
         <Text style={[styles.label, {marginTop: 40}]}>
-          Enter your name :
+          Enter your name:
         </Text>
         <TextInput
           placeholder='John Smith'
@@ -32,8 +32,10 @@ export default class Home extends React.Component {
         />
         <TouchableOpacity
           onPress={() => {
+            value = this.state.name
+
             Actions.chat({
-              name: this.state.name,
+              //name: value,
             });
           }}
         >
@@ -59,5 +61,7 @@ const styles = StyleSheet.create({
     marginLeft: 15,
   },
 });
+
+console.log(value);
 
 
